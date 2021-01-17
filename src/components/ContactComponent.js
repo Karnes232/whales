@@ -49,7 +49,7 @@ export default function Contact() {
               action="/contact/?success=true"
               data-netlify="true" 
               className={classes.form}
-              data-netlify-recaptcha="true"
+
               >
           <input type="hidden" name="form-name" value="contact" />
             <TextField 
@@ -84,7 +84,7 @@ export default function Contact() {
                 name="message"
             />
             <br />
-            <div data-netlify-recaptcha="true"></div>
+
             <div>
             <Button
                 type="submit"

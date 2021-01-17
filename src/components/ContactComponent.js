@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      backgroundColor: 'hsla(0, 5%, 96%, 0.8)',
+      backgroundColor: 'transparent',
     },
 
     form: {
@@ -49,6 +49,7 @@ export default function Contact() {
               action="/contact/?success=true"
               data-netlify="true" 
               className={classes.form}
+              data-netlify-recaptcha="true"
               >
           <input type="hidden" name="form-name" value="contact" />
             <TextField 
@@ -77,17 +78,19 @@ export default function Contact() {
                 required
                 fullWidth
                 multiline
+                rows={4}
                 id="standard-multiline-static"
                 label="Message"
                 name="message"
             />
             <br />
+            <div data-netlify-recaptcha="true"></div>
             <div>
             <Button
                 type="submit"
                 fullWidth
                 variant="contained"
-                color="primary"
+                color="hsla(0, 5%, 96%, 0.8)"
                 className={classes.submit}
             >
               Send

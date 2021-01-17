@@ -1,0 +1,111 @@
+.container {
+    position: relative;
+    top: 25vw;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.title h3 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.boatSpecs {
+  text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+#specs {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #specs td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #specs tr:nth-child(even){background-color:  rgb(24, 125, 153)}
+  
+  .boatDescription {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+@media screen and (min-width:600px) {
+    
+    .container {
+        top: 15vw;
+    }
+
+    .boatSpecs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        top: 5vw;
+    }
+}
+
+@media screen and (min-width:414px) and (min-height: 736px) and (max-width:414px) and (max-height:736px) {
+    .page-footer {
+      top: 12vh !important;
+    }
+    .boatDescription {
+        margin-bottom: 50px !important;
+    }
+  }
+
+@media screen and (min-width:736px) and (min-height: 414px) and (max-width:736px) and (max-height:414px) {
+    .boatDescription {
+        margin-bottom: 55px !important;
+    }
+}
+
+@media screen and (min-width:812px) and (min-height: 375px) and (max-width:812px) and (max-height:375px) {
+    .boatDescription {
+        margin-bottom: 55px !important;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .page-footer {
+      top: 10vh !important;
+    }
+    .boatDescription {
+        margin-bottom: 55px !important;
+    }
+  }
+
+@media screen and (min-width:1024px) and (min-height: 1366px) and (max-width:1024px) and (max-height:1366px) {
+    .page-footer {
+      top: 5vh !important;
+    }
+    .boatDescription {
+        margin-bottom: 55px !important;
+    }
+  }
+  
+@media screen and (min-width:1366px) and (min-height: 1024px) and (max-width:1366px) and (max-height:1024px) {
+    .page-footer {
+      top: 10vh !important;
+    }
+    .boatDescription {
+        margin-bottom: 195px !important;
+    }
+}

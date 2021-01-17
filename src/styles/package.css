@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    top: 25vw;
+    overflow: hidden;
+}
+
+h4 {
+    font-size: 2.0rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.daysPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.daysPrice h6 {
+    margin: 10px 50px;
+    font-size: 1.25rem;
+}
+
+.overview {
+    text-align: center;
+}
+
+.overview h6 {
+    font-size: 1.25rem;
+    margin: 10px 0px;
+}
+
+.overview p {
+    margin: 18px 10px;
+}
+
+.included {
+    margin: 0;
+    align-items: center;
+}
+
+.included h6 {
+      text-align: center;
+      font-size: 1.25rem;
+      margin: 10px 0px;
+}
+  
+.included td {
+      text-align: center;
+}
+
+.itinerary-title h6 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 20px 0px;
+}
+
+.itinerary  h6 {
+    font-size: 1.1rem;
+    margin: 0px 0px 5px 15vw;
+}
+
+.itinerary p {
+    margin: 0px 10px;
+}
+
+.meals {
+    margin: 10px 10px !important;
+}
+
+.itinerary:last-of-type {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width:600px) {
+    
+    .container {
+        top: 15vw;
+    }
+    .itinerary:last-of-type {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        top: 5vw;
+    }
+}

@@ -23,10 +23,13 @@ function PhotoGallery() {
 
 
     return (
+        <>
         <Layout>
             <SEO title="Gallery" />
             <div className="container gallery">
-            <LazyLoad height={200}>
+            
+            <div id="photos">
+            <LazyLoad>
             <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
                 {viewerIsOpen ? (
@@ -44,7 +47,36 @@ function PhotoGallery() {
             </ModalGateway>
             </LazyLoad>
             </div>
+            <div id="video">
+                    <div className='videos'>
+                        <iframe  className="individual-video" src="https://player.vimeo.com/video/526565544" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/526565001" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/526564643" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/526564486" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/526563312" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/526560863" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div className='videos'>
+                        <iframe className="individual-video" src="https://player.vimeo.com/video/523031248" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </div>
+            </div>
         </Layout>
+        <div className="nav-gallery">
+                <a href="#photos">Photos<img src="https://img.icons8.com/ios-filled/50/000000/stack-of-photos--v1.png"/></a>
+                <a href="#video">Video<img src="https://img.icons8.com/ios-filled/50/000000/video-gallery.png"/></a>
+        </div>
+        </>
     )
 }
 

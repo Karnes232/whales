@@ -29,7 +29,9 @@ function IndexPage() {
           <p>Located approximently 90 kilometers north of the Dominican Republic is the Sanctuary for the Marine Mammals of the Dominican Republic. Every year between the months of January and April, the North Atlantic humpback whale comes to the waters of the Dominican Republic to court, mate and give birth. It has been estimated that over 3,000 pass through the Silver Bank each winter. </p>
         </Grid>
         <Grid item xs={12} sm={5} md={4} lg={6} >
+        <LazyLoad height={200}>
           <WhaleCarousel/>
+        </LazyLoad>
         </Grid>
         <Grid item xs={12} className='secondDescription middleDescription'>
           <p>Well being able to see these beautiful mammals on the surface from the boat will thrill and excite every visitor, its the opportunity to swim next to them is such a rare chance that very few places in the world permit.</p>
@@ -41,6 +43,7 @@ function IndexPage() {
           <LazyLoad height={200}>
           <div className="videoWrapper">
           <iframe className='responsive-iframe' src="https://player.vimeo.com/video/523031248?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="DJI_0002 copy 2"></iframe>
+          
           </div>
           </LazyLoad>
         </Grid>

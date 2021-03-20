@@ -27,7 +27,7 @@ function boat() {
             </tr>
             <tr>
               <td>Maximum Capacity</td>
-              <td>5</td>
+              <td>10 Guests</td>
             </tr>
             <tr>
               <td>Horsepower</td>
@@ -44,7 +44,7 @@ function boat() {
           </table>
         </Grid>
         <Grid item xs={12} className='boatDescription'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti eaque a assumenda reiciendis corporis nulla. Repudiandae nam earum aliquid eos, praesentium, esse, molestias dolor voluptas repellendus eaque aliquam ad a totam alias culpa optio odit soluta enim qui excepturi. Quo iste commodi aliquid sed voluptatem dolor fugit, maiores impedit ratione, velit repellendus eaque dolorem asperiores! Dolores alias placeat, dolor odit distinctio est, laboriosam cum consectetur maxime blanditiis</p>
+          <p>Blue Sky offers guests a spacious open layout, with a/c for each of the 4 guest rooms. Accommodations include 2 cabins with queen beds, and 2 cabins with double and single berth. </p>
         </Grid>
       </Grid>
       </div>

@@ -13,12 +13,14 @@ h4 {
 .daysPrice {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .daysPrice h6 {
-    margin: 10px 50px;
+    margin: 10px 30px;
     font-size: 1.25rem;
+    width: 50vw;
+    text-align: center;
 }
 
 .overview {
@@ -85,5 +87,17 @@ h4 {
 @media screen and (min-width:900px) {
     .container {
         top: 5vw;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .itinerary:last-child {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width:1380px) {
+    .itinerary:last-child {
+        margin-bottom: 8rem;
     }
 }

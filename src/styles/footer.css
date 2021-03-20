@@ -49,3 +49,12 @@
         top: 10vh;
     }
 }
+
+@media screen and (min-width:1080px)  {
+  
+    .footer-icons {
+      max-width: 800px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }

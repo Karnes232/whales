@@ -22,12 +22,12 @@ function trip() {
                         <h4><b>Dominican Republic</b></h4>
                     </Grid>
                     <Grid item xs={12} className='daysPrice'>
-                        <h6>3 Days</h6>
-                        <h6>$1050</h6>
+                        <h6>3 Nights</h6>
+                        <h6>$2,500 per Room</h6>
                     </Grid>
                     <Grid item xs={12} className='overview'>
                         <h6>Overview</h6>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dicta saepe officiis quod architecto officia rem dolores necessitatibus cum. Hic sunt excepturi laudantium repellendus porro id, recusandae, quidem suscipit error velit totam earum in, delectus corrupti veritatis facilis dolorum ipsa eos numquam. Iure, consectetur. Explicabo et tempora distinctio consequuntur adipisci, labore dolorem, laudantium totam a animi voluptatum, eaque officia doloribus. Quam similique, placeat reiciendis ut, soluta cumque, inventore quaerat nesciunt minima qui perspiciatis quos exercitationem expedita error modi veniam illo!</p>
+                        <p>Each trip is an all-inclusive 3 night experience. You will board the boat in Sousa, Dominican Republic, late afternoon. We will depart the dock around 6pm and cruise throughout the night to the Silver Bank Sanctuary arriving early in the morning to maximize our days. Well we are out on the Silver Bank thoughout both full days we will have a smaller tender boat that will bring us up close and personal with the humpback whales.</p>
                     </Grid>
                     <Grid item xs={12} className='included'>
                         <h6>Included</h6>
@@ -48,10 +48,6 @@ function trip() {
                                 <td>&#10004;</td>
                                 <td>Accommodations</td>
                             </tr>
-                            <tr>
-                                <td>&#10004;</td>
-                                <td>Transportation</td>
-                            </tr>
                         </table>
                     </Grid>
                     <Grid item xs={12} className='itinerary-title'>
@@ -60,17 +56,22 @@ function trip() {
                     <Grid item xs={12} sm={6} md={4} className='itinerary'>
                         <h6>Day 1</h6>
                         <p className='meals'>Meals: Dinner</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae temporibus saepe sint fuga ullam iste. A, similique unde. Vitae accusamus aspernatur aliquam voluptate cupiditate nobis architecto ipsam sint dicta</p>
+                        <p>We will board in the late afternoon, departing the dock around 6pm. Dinner will be provided on board, introductions to staff and other guests. Staff will provide a brief safety orientation.</p>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} className='itinerary'>
                         <h6>Day 2</h6>
                         <p className='meals'>Meals: Breakfast, Lunch, Dinner</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae temporibus saepe sint fuga ullam iste. A, similique unde. Vitae accusamus aspernatur aliquam voluptate cupiditate nobis architecto ipsam sint dicta!</p>
+                        <p>Early in the morning we will be arriving at the Silver Bank in hopes to catch the sunrise with the humpback whales welcoming us. Breakfast will be provided, and then what everyone has been waiting for our first trip in the tender boat to be able to see the whales up close and personal. Lunch will be served on the boat, and again we will have the tender boat make another trip out to swim with the whales for the afternoon. </p>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} className='itinerary'>
                         <h6>Day 3</h6>
-                        <p className='meals'>Meals: Breakfast</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestiae temporibus saepe sint fuga ullam iste. A, similique unde. Vitae accusamus aspernatur aliquam voluptate cupiditate nobis architecto ipsam sint dicta!</p>
+                        <p className='meals'>Meals: Breakfast, Lunch, Dinner</p>
+                        <p>After breakfast in the morning, the tender boat will be ready for everyone. Lunch will be served on the boat, and afterwards another trip on the tender boat to see the whales. After Dinner is served we will cruise throughout the night to arrive in the morning at Sousa.</p>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} className='itinerary'>
+                        <h6>Day 4</h6>
+                        <p className='meals'>Meals: Breakfast </p>
+                        <p>We will arrive early in the morning to Sousa and provide a light breakfast before we depart the boat.</p>
                     </Grid>
                 </Grid>    
             </div>

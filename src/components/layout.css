@@ -22,6 +22,9 @@ body {
   background: -webkit-linear-gradient(185deg, rgba(28,181,224,1) 0%, rgba(0,0,70,1) 55%);  /* Chrome 10-25, Safari 5.1-6 */
   background: rgb(28,181,224);
   background: linear-gradient(185deg, rgba(28,181,224,1) 0%, rgba(0,0,70,1) 55%); 
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .page-footer {
@@ -58,4 +61,11 @@ body {
   .page-footer {
     top: 10vh !important;
   }
+}
+@media screen and (min-width:1080px)  {
+  main, nav {
+    margin: 0 auto;
+    max-width: 1500px
+  }
+
 }

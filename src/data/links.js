@@ -12,6 +12,10 @@ export default [
     text: "package",
   },
   {
+    path: "/PhotoGallery",
+    text: "gallery",
+  },
+  {
     path: "/contact",
     text: "contact",
   },

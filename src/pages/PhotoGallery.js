@@ -69,6 +69,15 @@ function PhotoGallery() {
                     <div className='videos'>
                         <iframe className="individual-video" src="https://player.vimeo.com/video/523031248" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/uruIlZuTAkgA?playlist=uruIlZuTAkg&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/yMAEKV5xcSE?playlist=yMAEKV5xcSE&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/sksy3Sex0D4?playlist=sksy3Sex0D4&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
             </div>
             </div>
         </Layout>

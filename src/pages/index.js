@@ -26,6 +26,7 @@ function IndexPage() {
           <h4><i>The chance of a lifetime to be able to swim in warm tropical waters and be face to face with these beautiful humpback whales. </i></h4>
         </Grid>
         <Grid item xs={12} sm={7} md={8} lg={6} className='secondDescription centerDescription'>
+          <h2>The Silver Bank</h2>
           <p>Located approximently 90 kilometers north of the Dominican Republic is the Sanctuary for the Marine Mammals of the Dominican Republic. Every year between the months of January and April, the North Atlantic humpback whale comes to the waters of the Dominican Republic to court, mate and give birth. It has been estimated that over 3,000 pass through the Silver Bank each winter. </p>
         </Grid>
         <Grid item xs={12} sm={5} md={4} lg={6} >
@@ -34,6 +35,7 @@ function IndexPage() {
         </LazyLoad>
         </Grid>
         <Grid item xs={12} className='secondDescription middleDescription'>
+          <h2>Whale Watching</h2>
           <p>Well being able to see these beautiful mammals on the surface from the boat will thrill and excite every visitor, its the opportunity to swim next to them is such a rare chance that very few places in the world permit.</p>
           <p><i>Here is your chance to let your dreams come true and eye to eye with these magnificent mammal.</i></p>
           <p>During the months of January through April, we make two trips to the Silver Bank. This area is legendary for its close in water encounters with the humpback whales. Swimming with whales is an activity for the whole family, it's a trip that will leave you talking about it for years to come. </p>
@@ -48,6 +50,7 @@ function IndexPage() {
           </LazyLoad>
         </Grid>
         <Grid item xs={12} lg={4} className='secondDescription centerDescription'>
+          <h2>Snorkel With Humpback Whales</h2>
           <p>The in water encounters with the humpback whales are always a passive approach. Well we are in the water we simply just float and watch, allowing the curiosity of the whale to bring them to us. We have to earn their trust and remember that we are just visitors. </p>
         </Grid>
       </Grid>

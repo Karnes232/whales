@@ -15,7 +15,7 @@ main {
 .title {
     text-align: center;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .description {
@@ -31,6 +31,11 @@ main {
 
 .secondDescription {
     width: 100%;
+}
+
+.secondDescription h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .secondDescription p {

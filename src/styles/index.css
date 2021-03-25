@@ -18,6 +18,8 @@ main {
     font-size: 1.2rem;
 }
 
+
+
 .description {
     text-align: center;
     width: 100%;
@@ -44,6 +46,9 @@ main {
     margin-right: 10px;
 }
 
+.centerDescription h2 {
+  line-height: 2.5rem;
+}
 
 
 .carousel-wrapper-home {

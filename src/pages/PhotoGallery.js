@@ -48,35 +48,32 @@ function PhotoGallery() {
             </LazyLoad>
             </div>
             <div id="video">
-                    <div className='videos'>
-                        <iframe  className="individual-video" src="https://player.vimeo.com/video/526565544" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/526565001" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/526564643" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/526564486" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/526563312" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/526560863" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div className='videos'>
-                        <iframe className="individual-video" src="https://player.vimeo.com/video/523031248" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/fXsGPduuCZk?playlist=fXsGPduuCZk&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/uruIlZuTAkgA?playlist=uruIlZuTAkg&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/_ESem264Kvc?playlist=_ESem264Kvc&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/yMAEKV5xcSE?playlist=yMAEKV5xcSE&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/HdvAKKLjJXQ?playlist=HdvAKKLjJXQ&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/sksy3Sex0D4?playlist=sksy3Sex0D4&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/jg8ikwYwqXQ?playlist=jg8ikwYwqXQ&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/94bB0wCJ8k0?playlist=94bB0wCJ8k0&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/uEQamFCNGEw?playlist=uEQamFCNGEw&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/ud98x_3pgjg?playlist=ud98x_3pgjg&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/lR_epk8RkkI?playlist=lR_epk8RkkI&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div className="videos">
+                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/Gt8urmvwV9M?playlist=Gt8urmvwV9M&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
                     </div>
             </div>
             </div>

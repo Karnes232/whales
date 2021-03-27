@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import links from "../data/links"
 import styled from "styled-components"
-import Logo from "../images/preview-removebg-preview.png"
+import Logo from "../images/website_logo_transparent_background.png"
 import { Link } from "gatsby"
 import '../styles/nav.css'
 
@@ -188,7 +188,7 @@ export const NavStyles = styled.nav`
       position: relative;
       transform: translateX(0);
       transition: none;
-      width: 350px;
+      width: 600px;
 
       li {
         margin-left: 1rem;

@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import Grid from '@material-ui/core/Grid';
 import '../styles/package.css'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import whaleBanner from '../images/Humpback-Info-Banner.jpg'
 
 function trip() {
     return (
@@ -14,7 +13,7 @@ function trip() {
                 <Grid container spacing={1}>
                     <Grid item xs={12}>
                     <Jumbotron fluid>
-                        <img src={whaleBanner} alt=""/>
+                        <img src="https://i.ibb.co/CH6t62q/banner2.png" srcset="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
                     </Jumbotron>
                     </Grid>
                     <Grid item xs={12} className='title'>

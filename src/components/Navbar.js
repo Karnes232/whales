@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import links from "../data/links"
 import styled from "styled-components"
-import Logo from "../images/large-removebg-preview.png"
+import Logo from "../images/preview-removebg-preview.png"
 import { Link } from "gatsby"
 import '../styles/nav.css'
 
@@ -61,8 +61,8 @@ export const NavStyles = styled.nav`
     justify-content: space-between;
 
     img {
-      width: 60px;
-      height: 60px;
+      width: 4rem;
+      
 
       @media (min-width: 768px) {
         width: 100px;
@@ -135,7 +135,7 @@ export const NavStyles = styled.nav`
     background-color: transparent;
     border: none;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
 
     span {
       display: block;

@@ -4,20 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LazyLoad from 'react-lazyload';
 
 
-
-import photo8 from '../images/whales/1X5A6425.jpeg'
-import photo9 from '../images/whales/image-221.png'
-import photo10 from '../images/whales/image6-147.png'
-import photo1 from '../images/whales/IMG_7987.jpeg'
-import photo2 from '../images/whales/IMG_8086.jpeg'
-import photo7 from '../images/whales/IMG_8096.jpeg'
-import photo3 from '../images/whales/IMG_8141.jpeg'
-import photo4 from '../images/whales/IMG_8145.jpeg'
-import photo5 from '../images/whales/IMG_8158.jpeg'
-import photo6 from '../images/whales/IMG_8172.jpeg'
-
-
-
 export default function WhaleCarousel() {
 
     return (
@@ -34,52 +20,52 @@ export default function WhaleCarousel() {
             >
                 <div className="carousel-wrapper-inner">
                     <LazyLoad height={200}>
-                        <img  src={photo1} alt="Scuba Diving Punta Cana"/>
+                        <img  src="https://i.ibb.co/7CdxDNs/image-217.png" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo2} alt="Scuba Diving Punta Cana"/>
+                    <img  src='https://i.ibb.co/0cWwS2V/1X5A6379.jpg' alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo3} alt="Scuba Diving Punta Cana"/>
+                    <img  src='https://i.ibb.co/CbvYqRp/IMG-8145.jpg' alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo4} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/17HB0Mf/IMG-7991.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo5} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/QY18cxX/IMG-8172.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo6} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/dMSNfMp/1X5A6445.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo7} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/bHQZsGW/IMG-8096.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo8} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/pL41K9P/IMG-8158.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo9} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/N7nnPW5/IMG-8124.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
                 <div className="carousel-wrapper-inner">
                 <LazyLoad height={200}>
-                    <img  src={photo10} alt="Scuba Diving Punta Cana"/>
+                    <img  src="https://i.ibb.co/tbXw0N6/IMG-8187.jpg" alt="Scuba Diving Punta Cana"/>
                     </LazyLoad>
                 </div> 
 

@@ -1,5 +1,4 @@
 import React from "react"
-import whaleBanner from '../images/whales/banner2.png'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from 'react-bootstrap/Jumbotron'
@@ -50,7 +49,7 @@ function IndexPage() {
           </LazyLoad>
         </Grid>
         <Grid item xs={12} lg={4} className='secondDescription centerDescription'>
-          <h2>Snorkel With Humpback Whales</h2>
+          <h2>Snorkel with Humpback Whales</h2>
           <p>The in water encounters with the humpback whales are always a passive approach. Well we are in the water we simply just float and watch, allowing the curiosity of the whale to bring them to us. We have to earn their trust and remember that we are just visitors. </p>
         </Grid>
       </Grid>

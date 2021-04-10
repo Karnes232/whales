@@ -6,6 +6,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../data/photos";
 import '../styles/photogallery.css'
 import LazyLoad from 'react-lazyload';
+import { videos } from "../data/videos"
 
 function PhotoGallery() {
     const [currentImage, setCurrentImage] = useState(0);
@@ -48,51 +49,16 @@ function PhotoGallery() {
             </LazyLoad>
             </div>
             <div id="video">
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/fXsGPduuCZk?playlist=fXsGPduuCZk&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/_ESem264Kvc?playlist=_ESem264Kvc&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/HdvAKKLjJXQ?playlist=HdvAKKLjJXQ&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/jg8ikwYwqXQ?playlist=jg8ikwYwqXQ&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/94bB0wCJ8k0?playlist=94bB0wCJ8k0&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/uEQamFCNGEw?playlist=uEQamFCNGEw&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/ud98x_3pgjg?playlist=ud98x_3pgjg&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/lR_epk8RkkI?playlist=lR_epk8RkkI&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
-                    <LazyLoad>
-                    <div className="videos">
-                        <iframe title="Whales in Silver Bank" className="individual-video" src="https://www.youtube.com/embed/Gt8urmvwV9M?playlist=Gt8urmvwV9M&loop=1?autoplay=1&mute=0?controls=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    </LazyLoad>
+                    
+                        {videos.map((video, index) => (
+                        <LazyLoad>
+                            <div className="videos">
+                            <iframe title="Whales in Silver Bank" className="individual-video" src={video.src} frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        </LazyLoad>
+                        ))}
+                    
+
             </div>
             </div>
         </Layout>

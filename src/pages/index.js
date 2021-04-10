@@ -43,7 +43,7 @@ function IndexPage() {
         <Grid item xs={12} lg={8}>
           <LazyLoad height={200}>
           <div className="videoWrapper">
-          <iframe className='responsive-iframe' src="https://player.vimeo.com/video/523031248?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"  frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="DJI_0002 copy 2"></iframe>
+          <iframe className='responsive-iframe' src="https://www.youtube.com/embed/Zm2PDuqZczI?playlist=Zm2PDuqZczI&loop=1?autoplay=1&mute=0?controls=1"  frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="DJI_0002 copy 2"></iframe>
           
           </div>
           </LazyLoad>

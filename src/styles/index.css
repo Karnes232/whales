@@ -135,6 +135,12 @@ main {
   }
   }
 
+  @media screen and (min-width:1200px) {
+    .spaceFiller {
+      height: 100px;
+  }
+  }
+
   @media screen and (min-width:1300px) {
     .container {
       top: 8vw;
@@ -156,16 +162,14 @@ main {
     .container {
       top: 5vw;
   }
+  .spaceFiller {
+    height: 200px;
+  }
   }
 
   @media screen and (min-width:1366px) and (min-height: 1024px) and (max-width:1366px) and (max-height:1024px) {
-    .spaceFilller {
+    .spaceFiller {
       height: 100px;
   }
   }
 
-  @media screen and (min-width:1200px) {
-    .spaceFilller {
-      height: 100px;
-  }
-  }

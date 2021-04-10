@@ -53,7 +53,7 @@ function IndexPage() {
           <p>The in water encounters with the humpback whales are always a passive approach. Well we are in the water we simply just float and watch, allowing the curiosity of the whale to bring them to us. We have to earn their trust and remember that we are just visitors. </p>
         </Grid>
       </Grid>
-      <div className="spaceFilller"></div>
+      <div className="spaceFiller"></div>
     </div>
     
     

@@ -34,5 +34,8 @@ export const videos = [
       },
       {
           src: "https://www.youtube.com/embed/ck_I2aa_qbo?playlist=ck_I2aa_qbo&loop=1?autoplay=1&mute=0?controls=1",
+      },
+      {
+          src: "https://www.youtube.com/embed/dkxwsJ78Lfc?playlist=dkxwsJ78Lfc&loop=1?autoplay=1&mute=0?controls=1",
       }
 ].sort(() => Math.random() - 0.5);

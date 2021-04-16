@@ -13,7 +13,7 @@ function IndexPage() {
   <Layout>
     <Helment>
         <link rel="canonical" href="https://www.silverbankwhales.com/" />
-        <meta name="google-site-verification" content="QNQfgD0iQIbuHkuZ5fb8hKEYbV6iCN_TvIyRdnAu7yg" />
+        <meta name="google-site-verification" content="6C1VjAaC2hAZxjbi7ydNSMBeNrN1JlKtIcJDxum0jrs" />
 
     </Helment>
     <SEO title="Home" />

@@ -6,10 +6,16 @@ import '../styles/index.css'
 import Grid from '@material-ui/core/Grid';
 import WhaleCarousel from '../components/WhaleCarousel';
 import LazyLoad from 'react-lazyload';
+import Helment from 'react-helmet'
 
 function IndexPage() {
   return (
   <Layout>
+    <Helment>
+        <link rel="canonical" href="https://www.silverbankwhales.com/" />
+        <meta name="google-site-verification" content="QNQfgD0iQIbuHkuZ5fb8hKEYbV6iCN_TvIyRdnAu7yg" />
+
+    </Helment>
     <SEO title="Home" />
     <div className="container">
       <Grid container spacing={1}>

@@ -2,10 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Whale Watching`,
     description: `The chance of a lifetime to be able to swim in warm tropical waters and be face to face with these beautiful humpback whales.`,
+    keywords: `whale watching, humpback whales, snorkelling with whales, whale watching dominican republic`,
+    url: `https://www.silverbankwhales.com/`,
+    siteUrl: `https://www.silverbankwhales.com/`,
     author: `@karnes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

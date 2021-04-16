@@ -13,7 +13,7 @@ function trip() {
                 <Grid container spacing={1}>
                     <Grid item xs={12}>
                     <Jumbotron fluid>
-                        <img src="https://i.ibb.co/CH6t62q/banner2.png" srcset="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
+                        <img src="https://i.ibb.co/CH6t62q/banner2.png" srcSet="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
                     </Jumbotron>
                     </Grid>
                     <Grid item xs={12} className='title'>
@@ -31,22 +31,24 @@ function trip() {
                     <Grid item xs={12} className='included'>
                         <h6>Included</h6>
                         <table id='included'>
-                            <tr>
-                                <td>&#10004;</td>
-                                <td>All meals</td>
-                            </tr>
-                            <tr>
-                                <td>&#10004;</td>
-                                <td>Soft Drinks</td>
-                            </tr>
-                            <tr>
-                                <td>&#10004;</td>
-                                <td>Alcoholic Beverages</td>
-                            </tr>
-                            <tr>
-                                <td>&#10004;</td>
-                                <td>Accommodations</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>&#10004;</td>
+                                    <td>All meals</td>
+                                </tr>
+                                <tr>
+                                    <td>&#10004;</td>
+                                    <td>Soft Drinks</td>
+                                </tr>
+                                <tr>
+                                    <td>&#10004;</td>
+                                    <td>Alcoholic Beverages</td>
+                                </tr>
+                                <tr>
+                                    <td>&#10004;</td>
+                                    <td>Accommodations</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </Grid>
                     <Grid item xs={12} className='itinerary-title'>
@@ -71,6 +73,16 @@ function trip() {
                         <h6>Day 4</h6>
                         <p className='meals'>Meals: Breakfast </p>
                         <p>We will arrive early in the morning to Sousa and provide a light breakfast before we depart the boat.</p>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} className='itinerary'>
+                        <h6>Optional</h6>
+                        <p className='meals'>Transportation </p>
+                        <p>As we know finding flights into certain airports can be difficult depending where you are flying from, we are able to assist you in transportation from any location across the country. Feel free to contact us for more information.</p>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} className='itinerary'>
+                        <h6>Optional</h6>
+                        <p className='meals'>Accommodation </p>
+                        <p>If you need help finding accommodation in Sousa in the days prior to or after the excursion feel free to contact us for more information.</p>
                     </Grid>
                 </Grid>    
             </div>

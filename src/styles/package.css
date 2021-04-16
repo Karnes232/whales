@@ -34,6 +34,7 @@ h4 {
 
 .overview p {
     margin: 18px 10px;
+    font-size: 1.1rem;
 }
 
 .included {
@@ -98,12 +99,12 @@ h4 {
 
 @media screen and (min-width:1080px) {
     .itinerary:last-child {
-        margin-bottom: 4rem;
+        margin-bottom: 6rem;
     }
 }
 
-@media screen and (min-width:1380px) {
+@media screen and (min-width:1320px) {
     .itinerary:last-child {
-        margin-bottom: 8rem;
+        margin-bottom: 9rem;
     }
 }

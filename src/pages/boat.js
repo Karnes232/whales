@@ -21,26 +21,28 @@ function boat() {
         <Grid item xs={12} md={4} className='boatSpecs'>
           <h4>Specs</h4>
           <table id='specs'>
-            <tr>
-              <td>Length Overall</td>
-              <td>150'</td>
-            </tr>
-            <tr>
-              <td>Maximum Capacity</td>
-              <td>10 Guests</td>
-            </tr>
-            <tr>
-              <td>Horsepower</td>
-              <td>250</td>
-            </tr>
-            <tr>
-              <td>Bathroom</td>
-              <td>&#10004;</td>
-            </tr>
-            <tr>
-              <td>Shower</td>
-              <td>&#10004;</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>Length Overall</td>
+                <td>150'</td>
+              </tr>
+              <tr>
+                <td>Maximum Capacity</td>
+                <td>10 Guests</td>
+              </tr>
+              <tr>
+                <td>Horsepower</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>Bathroom</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr>
+                <td>Shower</td>
+                <td>&#10004;</td>
+              </tr>
+            </tbody>
           </table>
         </Grid>
         <Grid item xs={12} className='boatDescription'>

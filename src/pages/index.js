@@ -15,7 +15,7 @@ function IndexPage() {
       <Grid container spacing={1}>
         <Grid item xs={12}>
           <Jumbotron fluid>
-            <img src="https://i.ibb.co/CH6t62q/banner2.png" srcset="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
+            <img src="https://i.ibb.co/CH6t62q/banner2.png" srcSet="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
           </Jumbotron>
         </Grid>
         <Grid item xs={12} className='title'>
@@ -26,7 +26,7 @@ function IndexPage() {
         </Grid>
         <Grid item xs={12} sm={7} md={8} lg={6} className='secondDescription centerDescription'>
           <h2>The Silver Bank</h2>
-          <p>Located approximently 90 kilometers north of the Dominican Republic is the Sanctuary for the Marine Mammals of the Dominican Republic. Every year between the months of January and April, the North Atlantic humpback whale comes to the waters of the Dominican Republic to court, mate and give birth. It has been estimated that over 3,000 pass through the Silver Bank each winter. </p>
+          <p>Located approximately 90 kilometers north of the Dominican Republic is the Sanctuary for the Marine Mammals of the Dominican Republic. Every year between the months of January and April, the North Atlantic humpback whale comes to the waters of the Dominican Republic to court, mate and give birth. It has been estimated that over 3,000 pass through the Silver Bank each winter. </p>
         </Grid>
         <Grid item xs={12} sm={5} md={4} lg={6} >
         <LazyLoad height={200}>

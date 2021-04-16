@@ -90,7 +90,7 @@ export default function Contact() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                color="hsla(0, 5%, 96%, 0.8)"
+                color="inherit"
                 className={classes.submit}
             >
               Send

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Whale Watching`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `The chance of a lifetime to be able to swim in warm tropical waters and be face to face with these beautiful humpback whales.`,
     author: `@karnes`,
   },
   plugins: [

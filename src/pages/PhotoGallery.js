@@ -22,7 +22,6 @@ function PhotoGallery() {
         setViewerIsOpen(false);
     };
 
-
     return (
         <>
         <Layout>
@@ -51,9 +50,9 @@ function PhotoGallery() {
             <div id="video">
                     
                         {videos.map((video, index) => (
-                        <LazyLoad>
+                        <LazyLoad key={index}>
                             <div className="videos">
-                            <iframe title="Whales in Silver Bank" className="individual-video" src={video.src} frameborder="0" allowfullscreen></iframe>
+                            <iframe title="Whales in Silver Bank" className="individual-video" src={video.src} frameBorder="0" allowFullScreen></iframe>
                         </div>
                         </LazyLoad>
                         ))}

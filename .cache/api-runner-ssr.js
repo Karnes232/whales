@@ -1,10 +1,17 @@
 var plugins = [{
+      name: 'gatsby-plugin-react-helmet',
       plugin: require('/home/karnes/coding/personal/franklin/whales/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-sitemap',
+      plugin: require('/home/karnes/coding/personal/franklin/whales/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+    },{
+      name: 'gatsby-plugin-google-fonts',
       plugin: require('/home/karnes/coding/personal/franklin/whales/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["poppins:300,400,500,600,700","Alegreya:ital,wght@0,400;0,700;1,400","Yellowtail"],"display":"swap"},
     },{
+      name: 'gatsby-plugin-manifest',
       plugin: require('/home/karnes/coding/personal/franklin/whales/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"whale-watching","short_name":"whale","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/website_logo_transparent_background.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"0ed9698a660da4edf5b9423b5b2604f8"},
     }]
@@ -34,11 +41,21 @@ module.exports = (api, args, defaultReturn, argTransform) => {
     if (!plugin.plugin[api]) {
       return undefined
     }
-    const result = plugin.plugin[api](args, plugin.options)
-    if (result && argTransform) {
-      args = argTransform({ args, result })
+    try {
+      const result = plugin.plugin[api](args, plugin.options)
+      if (result && argTransform) {
+        args = argTransform({ args, result })
+      }
+      return result
+    } catch (e) {
+      if (plugin.name !== `default-site-plugin`) {
+        // default-site-plugin is user code and will print proper stack trace,
+        // so no point in annotating error message pointing out which plugin is root of the problem
+        e.message += ` (from plugin: ${plugin.name})`
+      }
+
+      throw e
     }
-    return result
   })
 
   // Filter out undefined results.

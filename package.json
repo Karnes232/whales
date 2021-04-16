@@ -9,6 +9,7 @@
     "@slixites/gatsby-plugin-google-fonts": "^1.1.1",
     "gatsby": "^3.3.0",
     "gatsby-image": "^3.3.0",
+    "gatsby-plugin-google-analytics": "^3.3.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^3.3.0",
     "gatsby-plugin-offline": "^4.3.0",

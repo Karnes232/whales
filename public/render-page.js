@@ -2055,6 +2055,18 @@ var plugins = [{
     "include_favicon": true,
     "cacheDigest": "0ed9698a660da4edf5b9423b5b2604f8"
   }
+}, {
+  name: 'gatsby-plugin-google-analytics',
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-google-analytics/gatsby-ssr */ "./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "trackingId": "G-HXM7FTQ84H",
+    "head": true,
+    "anonymize": false,
+    "respectDNT": false,
+    "exclude": [],
+    "pageTransitionDelay": 0
+  }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
@@ -3410,6 +3422,103 @@ function stripPrefix(str, prefix = ``) {
 
   return str;
 }
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-analytics/gatsby-ssr.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.onRenderBody = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var knownOptions = {
+  createOnly: {
+    clientId: "string",
+    sampleRate: "number",
+    siteSpeedSampleRate: "number",
+    alwaysSendReferrer: "boolean",
+    allowAnchor: "boolean",
+    cookieName: "string",
+    cookieFlags: "string",
+    cookieExpires: "number",
+    storeGac: "boolean",
+    legacyCookieDomain: "string",
+    legacyHistoryImport: "boolean",
+    allowLinker: "boolean",
+    storage: "string"
+  },
+  general: {
+    allowAdFeatures: "boolean",
+    dataSource: "string",
+    queueTime: "number",
+    forceSSL: "boolean",
+    transport: "string"
+  }
+};
+
+var onRenderBody = function onRenderBody(_ref, pluginOptions) {
+  var setHeadComponents = _ref.setHeadComponents,
+      setPostBodyComponents = _ref.setPostBodyComponents;
+
+  if (true) {
+    return null;
+  } // Lighthouse recommends pre-connecting to google analytics
+
+
+  setHeadComponents([/*#__PURE__*/_react.default.createElement("link", {
+    rel: "preconnect",
+    key: "preconnect-google-analytics",
+    href: "https://www.google-analytics.com"
+  }), /*#__PURE__*/_react.default.createElement("link", {
+    rel: "dns-prefetch",
+    key: "dns-prefetch-google-analytics",
+    href: "https://www.google-analytics.com"
+  })]);
+  var excludeGAPaths = [];
+
+  if (typeof pluginOptions.exclude !== "undefined") {
+    var Minimatch = __webpack_require__(/*! minimatch */ "./node_modules/minimatch/minimatch.js").Minimatch;
+
+    pluginOptions.exclude.map(function (exclude) {
+      var mm = new Minimatch(exclude);
+      excludeGAPaths.push(mm.makeRe());
+    });
+  }
+
+  var gaCreateOptions = {};
+
+  for (var option in knownOptions.createOnly) {
+    if (typeof pluginOptions[option] === knownOptions.createOnly[option]) {
+      gaCreateOptions[option] = pluginOptions[option];
+    }
+  }
+
+  var setComponents = pluginOptions.head ? setHeadComponents : setPostBodyComponents;
+  return setComponents([/*#__PURE__*/_react.default.createElement("script", {
+    key: "gatsby-plugin-google-analytics",
+    dangerouslySetInnerHTML: {
+      __html: "\n  " + (excludeGAPaths.length ? "window.excludeGAPaths=[" + excludeGAPaths.join(",") + "];" : "") + "\n  " + (typeof pluginOptions.anonymize !== "undefined" && pluginOptions.anonymize === true ? "function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='" + pluginOptions.trackingId + "',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);" : "") + "\n  if(" + (typeof pluginOptions.respectDNT !== "undefined" && pluginOptions.respectDNT == true ? "!(parseInt(navigator.doNotTrack) === 1 || parseInt(window.doNotTrack) === 1 || parseInt(navigator.msDoNotTrack) === 1 || navigator.doNotTrack === \"yes\")" : "true") + ") {\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n    m=s.getElementsByTagName(o)[0];" + (pluginOptions.defer ? "a.defer=1;" : "a.async=1;") + "a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');\n  }\n  if (typeof ga === \"function\") {\n    ga('create', '" + pluginOptions.trackingId + "', '" + (typeof pluginOptions.cookieDomain === "string" ? pluginOptions.cookieDomain : "auto") + "', " + (typeof pluginOptions.name === "string" ? "'" + pluginOptions.name + "', " : "") + JSON.stringify(gaCreateOptions) + ");\n      " + (typeof pluginOptions.anonymize !== "undefined" && pluginOptions.anonymize === true ? "ga('set', 'anonymizeIp', true);" : "") + "\n      " + (typeof pluginOptions.optimizeId !== "undefined" ? "ga('require', '" + pluginOptions.optimizeId + "');" : "") + "\n      " + (typeof pluginOptions.experimentId !== "undefined" ? "ga('set', 'expId', '" + pluginOptions.experimentId + "');" : "") + "\n      " + (typeof pluginOptions.variationId !== "undefined" ? "ga('set', 'expVar', '" + pluginOptions.variationId + "');" : "") + "\n      " + Object.keys(knownOptions.general).reduce(function (gaSetCommands, option) {
+        if (typeof pluginOptions[option] === knownOptions.general[option]) {
+          gaSetCommands += "ga('set', '" + option + "', '" + pluginOptions[option] + "');\n";
+        }
+
+        return gaSetCommands;
+      }, "") + "\n      }"
+    }
+  })]);
+};
+
+exports.onRenderBody = onRenderBody;
 
 /***/ }),
 

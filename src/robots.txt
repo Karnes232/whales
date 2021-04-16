@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Disallow: 
+
+User-agent: rogerbot
+Allow: /
+Disallow:
+
+User-agent: dotbot
+Allow: /
+Disallow: 

@@ -26,7 +26,7 @@ function trip() {
                     </Grid>
                     <Grid item xs={12} className='overview'>
                         <h6>Overview</h6>
-                        <p>Each trip is an all-inclusive 3 night experience. You will board the boat in Sousa, Dominican Republic, late afternoon. We will depart the dock around 6pm and cruise throughout the night to the Silver Bank Sanctuary arriving early in the morning to maximize our days. Well we are out on the Silver Bank thoughout both full days we will have a smaller tender boat that will bring us up close and personal with the humpback whales.</p>
+                        <p>Each trip is an all-inclusive 3 night experience. You will board the boat in Sousa, Dominican Republic, late afternoon. We will depart the dock around 6pm and cruise throughout the night to the Silver Bank Sanctuary arriving early in the morning to maximize our days. While we are out on the Silver Bank throughout both full days we will have a smaller tender boat that will bring us up close and personal with the humpback whales.</p>
                     </Grid>
                     <Grid item xs={12} className='included'>
                         <h6>Included</h6>

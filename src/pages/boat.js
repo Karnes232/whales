@@ -49,6 +49,7 @@ function boat() {
           <p>Blue Sky offers guests a spacious open layout, with a/c for each of the 4 guest rooms. Accommodations include 2 cabins with queen beds, and 2 cabins with double and single berth. </p>
         </Grid>
       </Grid>
+      <div className="spaceFiller"></div>
       </div>
     </Layout>
     </>

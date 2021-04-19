@@ -21,8 +21,14 @@ function trip() {
                         <h4><b>Dominican Republic</b></h4>
                     </Grid>
                     <Grid item xs={12} className='daysPrice'>
-                        <h6>3 Nights</h6>
-                        <h6>$2,500 per Room</h6>
+                        <div className='innerPrice'>
+                            <h6>3 Nights</h6>
+                        </div>
+                        <div className='innerPrice'>
+                            <h6>$1,250 per person</h6>
+                            <h6>Min 2 people</h6>
+                        </div>
+                        
                     </Grid>
                     <Grid item xs={12} className='overview'>
                         <h6>Overview</h6>

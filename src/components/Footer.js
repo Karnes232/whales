@@ -17,7 +17,7 @@ function Footer() {
                 </Grid>
                 <Grid item xs={12} className='footer-icons'>
                     <a className='mx-2' href="https://www.facebook.com/GrandBayWhales/" target="_blank" aria-label="Facebook" rel="noreferrer"><SiFacebook/></a>
-                    <a className='mx-2' href="https://www.instagram.com/grandbayoftheseard/" target="_blank" aria-label="Instagram" rel="noreferrer"><SiInstagram/></a>
+                    <a className='mx-2' href="https://www.instagram.com/grandbaywhales/" target="_blank" aria-label="Instagram" rel="noreferrer"><SiInstagram/></a>
                     <a className='mx-2' href="mailto:grandbay.puntacana@zohomail.com" aria-label="Gmail"><GrMail/></a>
                 </Grid>
             </Grid>

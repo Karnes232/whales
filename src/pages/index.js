@@ -21,7 +21,7 @@ function IndexPage() {
       <Grid container spacing={1}>
         <Grid item xs={12}>
           <Jumbotron fluid>
-            <img src="https://i.ibb.co/CH6t62q/banner2.png" srcSet="https://i.ibb.co/CH6t62q/banner2.png 480w, https://i.ibb.co/vDXJT82/banner.png 1080w" alt=""/>
+            <img src="https://i.ibb.co/1QyZctL/banner2.webp" srcSet="https://i.ibb.co/1QyZctL/banner2.webp 480w, https://i.ibb.co/DbW1xbW/banner.webp 1080w" alt=""/>
           </Jumbotron>
         </Grid>
         <Grid item xs={12} className='title'>

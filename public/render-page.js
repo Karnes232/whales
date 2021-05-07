@@ -2047,13 +2047,13 @@ var plugins = [{
     "background_color": "#663399",
     "theme_color": "#663399",
     "display": "minimal-ui",
-    "icon": "src/images/website_logo_transparent_background.png",
+    "icon": "src/images/website_logo_transparent_background.webp",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "0ed9698a660da4edf5b9423b5b2604f8"
+    "cacheDigest": "70c4d24a992c6e2b7180c6b954323b69"
   }
 }, {
   name: 'gatsby-plugin-google-analytics',

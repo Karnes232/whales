@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import links from "../data/links"
 import styled from "styled-components"
-import Logo from "../images/website_logo_transparent_background.png"
+import Logo from "../images/website_logo_transparent_background.webp"
 import { Link } from "gatsby"
 import '../styles/nav.css'
 

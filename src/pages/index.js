@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import WhaleCarousel from '../components/WhaleCarousel';
 import LazyLoad from 'react-lazyload';
 import Helment from 'react-helmet'
+import { Link } from "gatsby"
 
 function IndexPage() {
   return (
@@ -29,13 +30,24 @@ function IndexPage() {
         </Grid>
         <Grid item xs={12} className='description'>
           <h4><i>The chance of a lifetime to be able to swim in warm tropical waters and be face to face with these beautiful humpback whales. </i></h4>
+          
         </Grid>
-        <Grid item xs={12} sm={7} md={8} lg={6} className='secondDescription centerDescription'>
+        <Grid item xs={12} sm={6} md={8} lg={6} className='secondDescription centerDescription'>
+        <div className="button-div">
+        <Link to="/contact">
+              <button
+              className="contact-button"
+              type="button"
+              >
+                Contact Us
+              </button>
+          </Link>
+          </div>
           <h2>The Silver Bank</h2>
           <p>Located approximately 90 kilometers north of the Dominican Republic is the Sanctuary for the Marine Mammals of the Dominican Republic. Every year between the months of January and April, the North Atlantic humpback whale comes to the waters of the Dominican Republic to court, mate and give birth. It has been estimated that over 3,000 pass through the Silver Bank each winter. </p>
         </Grid>
-        <Grid item xs={12} sm={5} md={4} lg={6} >
-        <LazyLoad height={200}>
+        <Grid item xs={12} sm={6} md={4} lg={6} className='whale-carousel'>
+        <LazyLoad height={200} className='inside-carousel'>
           <WhaleCarousel/>
         </LazyLoad>
         </Grid>
@@ -57,6 +69,16 @@ function IndexPage() {
         <Grid item xs={12} lg={4} className='secondDescription centerDescription'>
           <h2>Snorkel with Humpback Whales</h2>
           <p>The in water encounters with the humpback whales are always a passive approach. Well we are in the water we simply just float and watch, allowing the curiosity of the whale to bring them to us. We have to earn their trust and remember that we are just visitors. </p>
+          <div className="button-div">
+            <Link to="/package">
+                  <button
+                  className="contact-button"
+                  type="button"
+                  >
+                    More Info
+                  </button>
+              </Link>
+              </div>
         </Grid>
       </Grid>
       <div className="spaceFiller"></div>

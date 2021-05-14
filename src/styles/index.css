@@ -19,7 +19,31 @@ main {
     font-size: 1.2rem;
 }
 
+.button-div {
+  width: 100%;
+  text-align: center;
+}
 
+.contact-button {
+    margin-top: 1rem;
+    transition: all .9s ease;
+    color: #fff;
+    border: 2px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10rem;
+}
+
+.contact-button:hover {
+    color: #001F3F;
+    background-color: #fff
+}
 
 .description {
     text-align: center;
@@ -50,6 +74,7 @@ main {
 .centerDescription h2 {
   line-height: 2.5rem;
 }
+
 
 
 .carousel-wrapper-home {
@@ -100,7 +125,20 @@ main {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }  
+
+  }
+
+  @media screen and (min-width:600px) and (max-width:1000px) {
+    .whale-carousel {
+      position: relative
     }
+    
+    .inside-carousel {
+      position: absolute;     
+      top: 50%;                         
+      transform: translate(0, -50%)
+    }  
 
   }
 

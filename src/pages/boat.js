@@ -24,7 +24,7 @@ function boat() {
             <tbody>
               <tr>
                 <td>Length Overall</td>
-                <td>150'</td>
+                <td>50'</td>
               </tr>
               <tr>
                 <td>Maximum Capacity</td>
